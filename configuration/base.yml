@@ -4,8 +4,8 @@ application:
 database:
   host: localhost
   port: 5432
-  username: postgres
-  password: password
-  db: realword
+  username: realworld_tide
+  password: realworld_tide
+  db: realworld_tide
 authentication:
   secret: asupersecretsecret

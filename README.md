@@ -47,6 +47,17 @@ cargo install diesel_cli --no-default-features --features postgres
 ./scripts/init_db.sh
 ```
 
+### Setup without docker
+```bash
+psql
+create database realworld_tide with password 'realworld_tide';
+alter user realworld_tide createdb;
+exit
+
+diesel database setup --database-url postgres://realworld_tide:realworld_tide@localhost/realworld_tide
+cargo run
+```
+
 You are ready to go!
 
 ## Run tests
